@@ -30,7 +30,7 @@ const FirstSection = () => {
                                     <Dropdown.Divider />
                                     <Dropdown.Item >Charbagh</Dropdown.Item>
                                 </DropdownButton>
-                                <Form.Control className='txtColour' placeholder='Search for services' aria-label="Text input with dropdown button" />
+                                <Form.Control style={{ padding: '21px' }} className='txtColour' placeholder='Search for services' aria-label="Text input with dropdown button" />
                             </InputGroup>
                         </div>
                     </div>
