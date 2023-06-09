@@ -1,7 +1,10 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import WomenSalon from '../../assets/img/BeautySalon.png';
-import LeftSideShowGirl from '../../assets/img/leftsideGirl.png'
+import AcService from '../../assets/img/AcRepair.png'
+import PlumberService from '../../assets/img/PlumberServices.png'
+import Electrician from '../../assets/img/ElectricianServices.png'
+import CarWashing from '../../assets/img/CarService.png'
 import { Col, Row } from 'reactstrap';
 
 const SecondSection = () => {
@@ -13,40 +16,47 @@ const SecondSection = () => {
         },
         {
             id: 2,
-            image: WomenSalon,
-            title: 'Women Salon'
+            image: AcService,
+            title: 'AC Services'
         },
         {
             id: 3,
-            image: WomenSalon,
-            title: 'Women Salon'
+            image: PlumberService,
+            title: 'Plumber Services'
         },
         {
             id: 4,
-            image: WomenSalon,
-            title: 'Women Salon'
+            image: Electrician,
+            title: 'Electric Services'
         },
         {
             id: 5,
-            image: WomenSalon,
-            title: 'Women Salon'
+            image: CarWashing,
+            title: 'Car Washing'
         }
     ];
 
     return (
-        <div className='bgColour'>
-            <div className="text-center"><h1 style={{ color: '#142572' }} >Our Prime Services</h1></div>
+        <div className="bgColour">
+            <div className='bgColour p-5'>
+                <div className="text-center">
+                    <h1 style={{ color: '#142572' }} >Our Prime Services</h1>
+                    <p>Get our services at minimum cost in a required time at the best deal possible with granted good work.</p>
+                </div>
 
-            <div className="bgSecondSectionImg">
-                {PrimaryServices.map((item, index) => (
-                    <Card className=' cardHover' key={item.id}>
-                        <Card.Img className='img-fluid' src={item.image} />
-                        <Card.Text>
-                            {item.title}
-                        </Card.Text>
-                    </Card>
-                ))}
-                <img className='img-fluid' src={LeftSideShowGirl} alt="ADIMG" />
+                <div className="bgSecondSectionImg">
+                    {PrimaryServices.map((item, index) => (
+                        <Card className=' cardHover' key={item.id}>
+                            <Card.Img className='img-fluid' src={item.image} />
+                            <Card.Body className='bgSecondSectionServiceCard'>
+                                <Card.Text >
+                                    {item.title}
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    ))}
+                    {/* <img className='img-fluid' src={LeftSideShowGirl} alt="ADIMG" /> */}
+                </div>
             </div>
         </div>
     );

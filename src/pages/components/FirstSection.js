@@ -14,7 +14,7 @@ const FirstSection = () => {
                 <Col xl='6'>
                     <div className="d-flex justify-content-center align-items-center" style={{ height: '500px' }}>
                         <div>
-                            <h1 className='FirstSectionHeadinng'>Home services, on demand.</h1>
+                            <h1 className='FirstSectionHeadinng'>Home services, on demand. 👇</h1>
                             <InputGroup className="mb-3">
                                 <DropdownButton
                                     title="Select your Location ▿"
